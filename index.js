@@ -2,7 +2,7 @@ function takeANumber(current_line, new_guest) {
   current_line.push(new_guest)
   return "Welcome, " + new_guest + ". You are number " + current_line.length + " in line."
 }
-takeANumber(katzDeliLine, 'Ada')
+takeANumber(katzDeliLine)
 function nowServing(current_line) {
   if (current_line.length === 0) {
     return "There is nobody waiting to be served!"
