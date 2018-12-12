@@ -1,6 +1,12 @@
-function takeANumber(current_line, new_guest) {
-  current_line.push(new_guest)
-  return "Welcome, " + new_guest + ". You are number " + current_line.length + " in line."
+function takeANumber(current_line, new_customer) {
+  current_line.push(new_customer)
+  return "Welcome, " + new_customer + ". You are number " + current_line.length + " in line."
+}
+var current = 0
+function takeANumber2(current_line) {
+  current++
+  current_line.push(current)
+  return "Welcome, you are number " + current
 }
 takeANumber(katzDeliLine, 'Ada')
 function nowServing(current_line) {
